@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Mahatma Gandhi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #222;
+            line-height: 1.8;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #2980b9;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        section {
+            background: white;
+            margin: 50px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        figure {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+.gallery-grid {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-grid img {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+}
+
+        
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        ul li a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .quote-box {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #2980b9;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .timeline {
+            margin-top: 30px;
+        }
+
+        .timeline ul {
+            list-style: none;
+            border-left: 3px solid #2980b9;
+            padding-left: 20px;
+        }
+
+        .timeline li {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+     
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tribute to Mahatma Gandhi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#quotes">Quotes</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#links">Learn More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Mahatma Gandhi</h2>
+                <p>Mahatma Gandhi, born Mohandas Karamchand Gandhi on October 2, 1869, was the leader of the Indian independence movement against British colonial rule...</p>
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Portrait_Gandhi.jpg" alt="Mahatma Gandhi">
+                    <figcaption>Mahatma Gandhi - A Beacon of Peace</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="quotes">
+            <div class="container">
+                <h2>Famous Quotes</h2>
+                <div class="quote-box">"Be the change that you wish to see in the world."</div>
+                <div class="quote-box">"The best way to find yourself is to lose yourself in the service of others."</div>
+                <div class="quote-box">"An eye for an eye will only make the whole world blind."</div>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <div class="container">
+                <h2>Timeline of Major Events</h2>
+                <div class="timeline">
+                    <ul>
+                        <li><strong>1869</strong> - Born in Porbandar, Gujarat</li>
+                        <li><strong>1888</strong> - Traveled to London to study law</li>
+                        <li><strong>1893</strong> - Began activism in South Africa</li>
+                        <li><strong>1915</strong> - Returned to India</li>
+                        <li><strong>1930</strong> - Led the Salt March</li>
+                        <li><strong>1942</strong> - Launched Quit India Movement</li>
+                        <li><strong>1947</strong> - Witnessed Indian independence</li>
+                        <li><strong>1948</strong> - Assassinated in New Delhi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Photo Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="Spinning_wheel.webp" alt="Gandhi spinning thread">
+                    <img src="Mahatma__.jpg" alt="Gandhi studio 1931">
+                    <img src="gandhi in london.webp" alt="Gandhi in London">
+                    <img src="gandhi-spinning-wheel.webp" alt="Gandhi with spinning wheel">
+                    <img src="Salt March.webp" alt="Salt March">
+                </div>
+            </div>
+        </section>
+
+        <section id="links">
+            <div class="container">
+                <h2>Learn More</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi" target="_blank">Wikipedia: Mahatma Gandhi</a></li>
+                    <li><a href="https://www.mkgandhi.org/" target="_blank">Official Gandhi Website</a></li>
+                    <li><a href="https://www.britannica.com/biography/Mahatma-Gandhi" target="_blank">Britannica Biography</a></li>
+                    <li><a href="https://www.nobelprize.org/prizes/peace/">Nobel Peace Inspiration</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+         <span id="year"></span> Tribute Page @ Aditya Mishra. All Rights Reserved. 
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
